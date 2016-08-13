@@ -7,7 +7,12 @@ router.get('/new', function (req, res) {
   res.render('users/new', { 'error': error });
 });
 
+
+
+// CREATES NEW USER
 router.post('/create', db.create_user, function (req, res) {
+  var data = req.body
+  console.log(data);
   if(res.error){
     req.flash('error', res.error);
     res.redirect('new');
