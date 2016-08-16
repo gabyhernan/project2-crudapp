@@ -3,14 +3,19 @@
   <head>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
     <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Rye' rel='stylesheet' type='text/css'>
+    <link href="/css/loginbackground.css" rel="stylesheet" type="text/css">
+    <script src="/js/background.js" type="text/javascript"></script>
+    <!-- <link href="/css/style.css" rel="stylesheet" type="text/css"> -->
+   <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
+
   </head>
-  <body>
-    <div class="main-container" id='background'>
+  <body >
+
+    <div class="main-container overlay">
+
       <div class="border-container">
     <!--   THIS IS THE LOGIN PAGE  -->
-        <h1>ADULTING 101 </h1> <br>
+          <h1> Adulting 101 </h1>
         <h1> Life changing insights on how to pretend to be a better adult </h1>
 
         <div class="col-lg-6 center-block">
@@ -19,7 +24,7 @@
             <div class="alert alert-dismissible alert-danger">
               <strong>Uh Oh!<strong> {{error}}
             </div>
-            {{/error}}
+                        {{/error}}
             <form class="form-horizontal" action="/sessions/create" method="post">
               <fieldset>
                 <legend>Login</legend>
@@ -43,9 +48,9 @@
               </fieldset>
             </form>
           </div>
-          <br> <p>Not a member? <a href="/users/new">Sign Up!</a></p>
+          <br> <p class='signuptext'>Not a member? <a href="/users/new">Sign Up!</a></p>
            <h1> Because you know we are all just winging it in certain parts.. </h1> <br>
-
+           </>
         </div>
       </div>
     </div>

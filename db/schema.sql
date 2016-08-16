@@ -8,3 +8,13 @@ CREATE TABLE users (
 );
 
 
+CREATE TABLE favorites (
+  id SERIAL PRIMARY KEY,
+  user VARCHAR(255) references users(username),
+  pin link VARCHAR(255),
+  pin image VARCHAR(255)
+);
+
+
+
+

@@ -3,18 +3,20 @@ $('button').on('click', function(){
   $(this).toggleClass('faved');
 });
 
-// Dropdown toggle from http://codepen.io/scottb/pen/gixIv
-$('.dropdown-toggle').click(function(){
-  $(this).next('.dropdown').toggle();
-});
+function saveFavorite(){
+  $.ajax({
+    type: "POST",
+    url: "favorites/index.html",
+    data: {?????},
 
-$(document).click(function(e) {
-  var target = e.target;
-  if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown-toggle')) {
-    $('.dropdown').hide();
-  }
-});
+    success: function (result) {
 
-
+    } // closes success function
+  })// closes ajax
+}
 
   });
+
+
+
+

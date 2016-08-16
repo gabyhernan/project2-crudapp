@@ -1,4 +1,4 @@
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38a8d1', endColorstr='#8645f7',GradientType=0 );
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B3B3B3', endColorstr='#B3B3B3',GradientType=0 );
 }
 
 section{
@@ -8,15 +8,17 @@ section{
 }
 nav{
   width:100%;
+   background-color: #7F7F7F;
 }
 nav ul li{
   display:inline-block;
   list-style:none;
   width:160px;
   text-align:center;
-  font-family:Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   border: 1px dashed rgba(255,255,255, 0);
   color:#fff;
+
   padding:10px 0 10px 0;
   margin:-1px -5px -1px -1px;
   cursor:pointer;
@@ -25,7 +27,7 @@ nav ul li{
 }
 nav ul li:hover{
   border:1px dashed #000;
-  background: #FA8072;
+  background: #B3B3B3;
 }
 nav ul{
   border: 1px solid #fff;

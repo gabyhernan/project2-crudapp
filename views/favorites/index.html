@@ -7,7 +7,6 @@
   <script src="/js/background.js" type="text/javascript"></script>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
-
     <link href="/css/background.css" rel="stylesheet" type="text/css">
     <link href="/css/style.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Rye' rel='stylesheet' type='text/css'>
@@ -26,7 +25,7 @@
     <div></div>
     <ul>
       <li data-xcoord="0px" class="active">Hello, {{user.email}}</li>
-      <li data-xcoord="160px"> <a href='/favorites/index.html'> Your Favorites </a> </li>
+      <li data-xcoord="160px">Favorites</li>
       <li data-xcoord="320px">Contact</li>
       <li data-xcoord="480px">Log Out</li>
     </ul>
@@ -36,9 +35,9 @@
   </header>
 
 <br>
-    <div class='main overlay'>
+    <div class='main'>
 
-
+    <h2> Your Favorites </h2>
 
 
     <div id="pictures" class='card'>
@@ -51,7 +50,7 @@
 <!-- <button id="favorite"> Favorite</button> -->
 
      <!-- <span >{{note}}} </span> -->
-     <a href='#'> <button onclick='saveFavorite()' class='button2 favorite' id='userfavorite'>Favorite </button>  </a>
+     <a href='#'> <button class='button2'>Favorite </button>  </a>
     <a href='{{link}}'>
       <img height='' width ='' src="{{ url }}" class='picture card' id='pinimg' />
 
