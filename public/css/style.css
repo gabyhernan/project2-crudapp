@@ -39,5 +39,31 @@ h1 {
 }
 
 
+.button2{
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  border:1px solid #000;
+  border-radius:6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  padding:1em 2em 1em;
+  line-height:1;
+  background: transparent;
+  text-decoration:none;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight:100;
+  color:#000;
+  font-size:15px;
+}
+.button2:hover{
+  background: #DC143C;
+  color:  black;
+   transition-property:background .1s linear 0s;
+  -moz-transition:background .1s linear 0s;
+  -webkit-transition:background .1s linear 0s;
+  -o-transition:background .1s linear 0s;
+}
+
 
 
