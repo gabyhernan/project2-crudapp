@@ -1,7 +1,7 @@
 const express = require('express');
 const pgp = require('pg-promise')();
 
-const db = pgp('postgres://GAB@localhost:5432/auth');
+// const db = pgp('postgres://GAB@localhost:5432/auth');
 
 const app = express();
 const mustacheExpress = require('mustache-express');
@@ -105,8 +105,8 @@ app.use(flash());
 
 //   });
 // });
-
-app.listen(3000, function () { // listen to local server
+var port = process.env.PORT || 3000;
+app.listen(port, function () { // listen to local server
   console.log('Auth Demo App Online!');
 });
 

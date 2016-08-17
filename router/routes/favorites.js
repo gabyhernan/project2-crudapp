@@ -17,6 +17,7 @@ router.post('/:user_email', db.new_favorite, function(req, res){
         params: params,
         data: data
       }
+      res.render('favorites/index', stuff)
     }
     res.send(stuff)
 
