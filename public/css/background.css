@@ -1,6 +1,7 @@
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B3B3B3', endColorstr='#B3B3B3',GradientType=0 );
 }
 
+
 section{
   position:relative;
   width:640px;
@@ -44,6 +45,17 @@ nav div{
   width:162px;
   height:40px;
   z-index:99;
+}
+
+.person {
+  width: 20%;
+  height: 20%;
+}
+
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 68px;
 }
 /* .active{
   color:rgba(55, 186, 177, 1);

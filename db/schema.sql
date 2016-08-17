@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS favorites;
 DROP TABLE IF EXISTS users;
 
 CREATE TABLE users (
@@ -10,9 +11,9 @@ CREATE TABLE users (
 
 CREATE TABLE favorites (
   id SERIAL PRIMARY KEY,
-  user VARCHAR(255) references users(username),
-  pin link VARCHAR(255),
-  pin image VARCHAR(255)
+  user_email VARCHAR REFERENCES users(email),
+  pin_link VARCHAR(255),
+  pin_image VARCHAR(255)
 );
 
 

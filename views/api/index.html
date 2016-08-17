@@ -19,14 +19,14 @@
 
   <div class='row'> -->
   <header>
-
-<h1 class='text-center center-align'> Adulting 101 </h1>
+      <h1 class=''> ADULTING 101 <img src='https://image.freepik.com/free-icon/person-win_318-29559.png' class='person'> </h1>
+      <br>
 <section>
   <nav>
     <div></div>
     <ul>
-      <li data-xcoord="0px" class="active">Hello, {{user.email}}</li>
-      <li data-xcoord="160px"> <a href='/favorites/index.html'> Your Favorites </a> </li>
+      <li data-xcoord="0px" class="active">Hello, {{user.email}}  </li>
+      <li data-xcoord="160px"> <a href='/favorites/{{user.email}}'> Your Favorites </a> </li>
       <li data-xcoord="320px">Contact</li>
       <li data-xcoord="480px">Log Out</li>
     </ul>
@@ -51,7 +51,7 @@
 <!-- <button id="favorite"> Favorite</button> -->
 
      <!-- <span >{{note}}} </span> -->
-     <a href='#'> <button onclick='saveFavorite()' class='button2 favorite' id='userfavorite'>Favorite </button>  </a>
+     <a href='#'> <button class='button2 favorite' id='userfavorite' data-email={{user.email}} data-link={{link}} data-id={{link}} data-image={{url}}>Favorite </button>  </a>
     <a href='{{link}}'>
       <img height='' width ='' src="{{ url }}" class='picture card' id='pinimg' />
 
