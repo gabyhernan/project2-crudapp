@@ -13,19 +13,23 @@
   <body >
 
     <div class="main-container overlay">
+    <img src='https://i.imgsafe.org/46ef58e837.png' class='person'>
+     <h1> Life changing insights on how to pretend to be a better adult </h1>
 
       <div class="border-container">
     <!--   THIS IS THE LOGIN PAGE  -->
-          <h1> Adulting 101 </h1>
-        <h1> Life changing insights on how to pretend to be a better adult </h1>
+          <!-- <h1> --> <!-- </h1> -->
+
 
         <div class="col-lg-6 center-block">
-          <div class="well bs-component">
+          <div class="well bs-component login">
             {{#error}}
             <div class="alert alert-dismissible alert-danger">
               <strong>Uh Oh!<strong> {{error}}
             </div>
                         {{/error}}
+
+                      <br>
             <form class="form-horizontal" action="/sessions/create" method="post">
               <fieldset>
                 <legend>Login</legend>

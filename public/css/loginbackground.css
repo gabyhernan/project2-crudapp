@@ -16,18 +16,24 @@
  height:100%;
 }
 
-.center-block { float: none }
+.center-block {
+ float: none
+}
 
+.person {
+  width: 72%;
+  padding-left: 340px;
+ margin-top: 20px;
+}
 
+.login{
+margin-top: 9%;
+}
 
 h1{
   text-align:center;
   color:#FFF !important;
-  margin-top:10%;
   font:36px 'Roboto';
-  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
 }
 
 p{
